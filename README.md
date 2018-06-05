@@ -29,6 +29,10 @@ System requirements for building a local copy:
 - `./eosio_build.sh`
 - `cd build`
 - `sudo make install`
+- Start your local blockchain
+```
+nodeos -e -p eosio --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin 
+```
 
 
 ## CLEOS
