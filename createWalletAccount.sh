@@ -17,6 +17,8 @@ echo "What would you like to name your account?"
 read ACCOUNT_NAME
 cleos create account eosio $ACCOUNT_NAME $PUBLIC_KEY
 
+cleos wallet import -n $WALLET_NAME $PRIVATE_KEY
+
 if [[ ! -e test-wallets-accounts ]]; then
     mkdir test-wallets-accounts
 fi
